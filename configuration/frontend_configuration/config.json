@@ -1,20 +1,50 @@
 {
-    "@openmrs/esm-patient-chart-app": {
-        "extensionSlots": {
-            "action-menu-patient-chart-items-slot": {
-                "order": [
-                    "order-basket-action-menu"
-                ]
-            }
-        }
+  "@openmrs/esm-patient-chart-app": {
+    "restrictByVisitLocationTag": true,
+    "showUpcomingAppointments": true,
+    "extensionSlots": {
+      "action-menu-patient-chart-items-slot": {
+        "order": ["order-basket-action-menu"]
+      }
     },
-    "@openmrs/esm-ward-app": {
-        "extensionSlots": {
-            "action-menu-ward-patient-items-slot": {
-                "add": [
-                    "order-basket-action-menu"
-                ]
-            }
-        }
+    "logo": {
+      "src": "adey_white.png"
     }
+  },
+  "@openmrs/esm-ward-app": {
+    "extensionSlots": {
+      "action-menu-ward-patient-items-slot": {
+        "add": ["order-basket-action-menu"]
+      }
+    }
+  },
+  "@openmrs/esm-laboratory-app": {
+    "labTableColumns": [
+      "name",
+      "patientId",
+      "urgency",
+      "age",
+      "sex",
+      "totalOrders",
+      "action"
+    ]
+  },
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#002F6C",
+    "Brand color #2": "#002F6C",
+    "Brand color #3": "#1A75BB"
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "adey_white.png"
+    }
+  },
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "adey_black.png"
+    }
+  },
+  "@openmrs/esm-billing-app": {
+    "defaultCurrency": "ETB"
+  }
 }
